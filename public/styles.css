@@ -1,0 +1,189 @@
+:root{
+  --black:#000000;
+  --white:#ffffff;
+}
+
+body.retro{
+  font-family:"Press Start 2P", monospace;
+  background: var(--black);
+  color: var(--white);
+  min-height:100vh;
+  font-size:11px;
+  letter-spacing:0;
+}
+
+body.retro .navbar{
+  background: var(--black) !important;
+  border-bottom:1px solid var(--white);
+}
+
+body.retro .navbar .navbar-brand{
+  color: var(--white) !important;
+}
+
+body.retro .card{
+  background: var(--black);
+  border:1px solid var(--white);
+  border-radius:0;
+}
+
+body.retro .card-title{
+  color: var(--white);
+  font-size:0.75rem;
+}
+
+body.retro .text-muted,
+body.retro .small{
+  color: var(--white) !important;
+}
+
+body.retro .form-control,
+body.retro .form-select{
+  background: var(--black);
+  color: var(--white);
+  border:1px solid var(--white);
+  border-radius:0;
+}
+
+body.retro .form-control::placeholder{
+  color: var(--white);
+}
+
+body.retro .btn,
+body.retro .btn-primary,
+body.retro .btn-success,
+body.retro .btn-warning,
+body.retro .btn-danger,
+body.retro .btn-outline-secondary,
+body.retro .btn-outline-primary,
+body.retro .btn-outline-light{
+  background: var(--black) !important;
+  border:1px solid var(--white) !important;
+  color: var(--white) !important;
+  border-radius:0;
+  font-size:0.65rem;
+}
+
+body.retro .btn:hover,
+body.retro .btn:focus,
+body.retro .btn:active{
+  background: var(--black) !important;
+  border:1px solid var(--white) !important;
+  color: var(--white) !important;
+}
+
+/* Fix CSS for Tabs */
+body.retro .nav-tabs {
+  border-bottom: 1px solid var(--white);
+}
+body.retro .nav-tabs .nav-link {
+  color: var(--white);
+  background: var(--black);
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 0;
+  font-size: 0.70rem;
+}
+body.retro .nav-tabs .nav-link:hover {
+  border-color: var(--white) var(--white) transparent;
+}
+body.retro .nav-tabs .nav-link.active {
+  color: var(--black);
+  background: var(--white);
+  border-color: var(--white) var(--white) transparent;
+}
+
+body.retro .nav-pills .nav-link {
+  color: var(--white);
+  border-radius: 0;
+  border: 1px solid var(--white);
+  margin: 0 5px;
+}
+body.retro .nav-pills .nav-link.active {
+  color: var(--black);
+  background: var(--white);
+}
+
+body.retro .table,
+body.retro .table thead,
+body.retro .table tbody,
+body.retro .table tr,
+body.retro .table th,
+body.retro .table td{
+  background: var(--black) !important;
+  color: var(--white) !important;
+  border:1px solid var(--white) !important;
+}
+
+body.retro .table-responsive{
+  background: var(--black);
+  border:1px solid var(--white);
+  border-radius:0;
+}
+
+body.retro .table tbody tr:nth-child(odd) td{
+  background: var(--black) !important;
+}
+
+body.retro .table tbody tr:hover td{
+  background: var(--black) !important;
+}
+
+body.retro .badge{
+  background: var(--black) !important;
+  border:1px solid var(--white) !important;
+  color: var(--white) !important;
+}
+
+/* Fix text-bg-warning on retro theme */
+body.retro .text-bg-warning {
+  background: var(--white) !important;
+  color: var(--black) !important;
+}
+
+.output{
+  background: var(--black);
+  color: var(--white);
+  border:1px solid var(--white);
+  border-radius:0;
+  padding:1rem;
+  font-size:0.65rem;
+  max-height:400px;
+  overflow:auto;
+}
+
+.form-label{
+  color: var(--white) !important;
+}
+
+@media(max-width:576px){
+  body.retro{ font-size:10px; }
+}
+
+#terminalLog, #userTerminalLog{
+  white-space: pre-wrap;
+}
+
+#loadingLine{
+  border: 1px solid #fff;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.cursor{
+  display:inline-block;
+  width: 10px;
+  margin-left: 6px;
+  background:#fff;
+  height: 14px;
+  vertical-align: middle;
+  animation: blink 1s steps(1,end) infinite;
+}
+
+@keyframes blink{
+  50%{ opacity:0; }
+}
+
+*{
+  transition: none !important;
+}
